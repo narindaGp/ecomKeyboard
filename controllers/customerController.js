@@ -75,6 +75,7 @@ class CustomerController {
     }
 
     static checkoutCart(req, res) {
+        
 
 
 

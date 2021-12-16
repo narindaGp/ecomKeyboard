@@ -6,11 +6,15 @@ const Controller = require('../controllers/controller.js')
 
 
 
+
 router.get('/', Controller.getLanding)
 
-//   router.get('/', (req, res) => {
-//     res.render('verification')
-//   })
+
+
+
+  router.get('/', (req, res) => {
+    res.render('home')
+  })
 //   router.get('/marketplace', (req, res) => {
 //     res.render('marketplace')
 //   })
