@@ -27,96 +27,96 @@
         "productName": "Microsoft Word",
         "price": 197650,
         "stock": 15,
-        "SellerId": 2
+        "SellerId": 1
     },
     {
         "productName": "Microsoft Power Point",
         "price": 275596,
         "stock": 26,
-        "SellerId": 2
+        "SellerId": 1
     },
     {
         "productName": "Microsoft Publisher",
         "price": 440951,
         "stock": 18,
-        "SellerId": 2
+        "SellerId": 1
     },
     {
         "productName": "Microsoft Excel",
         "price": 275362,
         "stock": 2,
-        "SellerId": 2
+        "SellerId": 1
     },
     {
         "productName": "Dawn of War",
         "price": 368061,
         "stock": 5,
-        "SellerId": 3
+        "SellerId": 1
     },
     {
         "productName": "Dawn of War 2",
         "price": 487389,
         "stock": 8,
-        "SellerId": 3
+        "SellerId": 1
     },
     {
         "productName": "Dawn of War 3",
         "price": 386185,
         "stock": 25,
-        "SellerId": 3
+        "SellerId": 1
     },
     {
         "productName": "Adobe PhotoShop",
         "price": 131372,
         "stock": 27,
-        "SellerId": 4
+        "SellerId": 1
     },
     {
         "productName": "Adobe Acrobat",
         "price": 397923,
         "stock": 30,
-        "SellerId": 4
+        "SellerId": 1
     },
     {
         "productName": "Adobe Reader",
         "price": 459154,
         "stock": 27,
-        "SellerId": 4
+        "SellerId": 1
     },
     {
         "productName": "Adobe Illustrator   ",
         "price": 302700,
         "stock": 26,
-        "SellerId": 4
+        "SellerId": 1
     },
     {
         "productName": "Final Fantasy XIV",
         "price": 468903,
         "stock": 17,
-        "SellerId": 5
+        "SellerId": 1
     },
     {
         "productName": "Final Fantasy VII",
         "price": 342782,
         "stock": 2,
-        "SellerId": 5
+        "SellerId": 1
     },
     {
         "productName": "Kingdom Hearts III",
         "price": 370333,
         "stock": 20,
-        "SellerId": 5
+        "SellerId": 1
     },
     {
         "productName": "NEO: The World Ends With You",
         "price": 106120,
         "stock": 13,
-        "SellerId": 5
+        "SellerId": 1
     },
     {
         "productName": "NieR:Automata",
         "price": 166420,
         "stock": 28,
-        "SellerId": 5
+        "SellerId": 1
     }
 ]

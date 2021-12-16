@@ -30,7 +30,7 @@ module.exports = {
       }
     });
   },
-  down: async (queryInterface, Sequelize) => {
-    await queryInterface.dropTable('Sellers');
+  down:  (queryInterface, Sequelize) => {
+    return queryInterface.dropTable('Sellers');
   }
 };
