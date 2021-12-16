@@ -1,23 +1,51 @@
 const Customer = require('../models/index').Customer
 const Product = require('../models/index').Product
-const ProductReceipt = require('../models/index').ProductReceipt
 
+const bcrypt = require('bcryptjs')
 
 
 class CustomerController {
     static createAccount(req, res) {
-        Customer.create()
+        res.render('createCustomer')
+    }
+    static createAccountPost(req, res) {
+        const { fullName, email, password } = req.body
+        let input = { fullName, email, password }
+        Customer.create(input)
             .then(data => {
-                res.render('createCustomer')
+                res.redirect('/customer/login')
             })
             .catch(err => {
                 res.send(err)
             })
     }
+
     static loginAccount(req, res) {
-        Customer.findByPk(id)
+        res.render('loginCustomer')
+    }
+
+    static loginAccountPost(req, res) {
+        const { email, password } = req.body
+        let input = { email, password }
+        Customer.findOne({ where: { email } })
             .then(data => {
-                res.redirect('/marketplace')
+                if (data) {
+
+                    const isValidPassword = bcrypt.compareSync(password, data.password)
+                    if (isValidPassword) {
+                        return res.redirect('/marketplace')
+                    }   
+                    else{
+                        const errormsg = "invalid password"
+                        return res.redirect(`/customer/login?error=${errormsg}`)
+                    }
+
+                }
+                else{
+                    const errormsg = "invalid username"
+                    return res.redirect(`/customer/login?error=${errormsg}`)
+
+                }
             })
             .catch(err => {
                 res.send(err)
@@ -36,7 +64,7 @@ class CustomerController {
     }
     static addToCart(req, res) {
         let id = req.params.id
-        Seller.findByPk(id)
+        Customer.findByPk(id)
             .then(data => {
                 res.render('addProduct', data)
             })
@@ -46,13 +74,7 @@ class CustomerController {
     }
 
     static checkoutCart(req, res) {
-        let ProductId = req.params.id
-        const { productName, price, stock, SellerId, type, size, requirement } = req.body
-        const product = (productName, price, stock, SellerId)
-        const productDescription = { type, size, requirement, ProductId }
 
-        Product.create(product)
-            .then()
 
 
 
