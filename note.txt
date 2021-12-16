@@ -19,4 +19,5 @@ tambahan
 stock di product
 SellerId di Product bukan ProductId di seller
 product dan customer sepertinya many-to-many (?)
+tambahan di routes
 
