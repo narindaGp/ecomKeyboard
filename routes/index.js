@@ -6,7 +6,7 @@ const Controller = require('../controllers/controller.js')
 
 
 
-router.get('/', Controller.getHome)
+router.get('/', Controller.getLanding)
 
 //   router.get('/', (req, res) => {
 //     res.render('verification')

@@ -1,8 +1,12 @@
 
 
 class Controller{
-  static getHome(req, res){
-    res.render('home')
+  static getLogin(req, res){
+    res.render('login')
+  }
+
+  static getLanding(req, res){
+    res.render('landing')
   }
 }
 
