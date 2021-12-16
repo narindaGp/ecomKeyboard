@@ -1,21 +1,53 @@
-let Seller = require('../models/index').Seller
-let Product = require('../models/index').Product
-let ProductDescription = require('../models/index')
+const Seller = require('../models/index').Seller
+const Product = require('../models/index').Product
+const ProductDescription = require('../models/index')
+
+const bcrypt = require('bcryptjs')
 
 class SellerController {
-    static createAccount(req,res){
-        Seller.create()
-        .then(data =>{
-            res.render('createSeller')
-        })
-        .catch(err =>{
-            res.send(err)
-        })
+    static createAccount(req, res) {
+        res.render('createSeller')
     }
-    static loginAccount(req,res){
-        res.redirect('/marketplace')
+    static createAccountPost(req, res) {
+        const { fullName, email, password } = req.body
+        let input = { fullName, email, password }
+        Seller.create(input)
+            .then(data => {
+                res.redirect('/seller/login')
+            })
+            .catch(err => {
+                res.send(err)
+            })
     }
 
+    static loginAccount(req, res) {
+        res.render('loginSeller')
+    }
+
+    static loginAccountPost(req, res) {
+        const { email, password } = req.body
+        Seller.findOne({ where: { email } })
+            .then(data => {
+                if (data) {
+                    const isValidPassword = bcrypt.compareSync(password, data.password)
+                    if (isValidPassword) {
+                        return res.redirect('/marketplace')
+                    }
+                    else {
+                        const errormsg = "invalid password"
+                        return res.redirect(`/customer/login?error=${errormsg}`)
+                    }
+
+                }
+                else {
+                    const errormsg = "invalid username"
+                    return res.redirect(`/customer/login?error=${errormsg}`)
+                }
+            })
+            .catch(err => {
+                res.send(err)
+            })
+    }
 
 
 
@@ -47,9 +79,16 @@ class SellerController {
         const productDescription = { type, size, requirement, ProductId }
 
         Product.create(product)
-            .then()
-
-
+            .then(data => {
+                return data
+            })
+        ProductDescription.create(productDescription)
+            .then(data => {
+                res.redirect('/seller/:id')
+            })
+            .catch(err =>{
+                res.send(err)
+            })
 
     }
 
