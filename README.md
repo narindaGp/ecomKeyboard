@@ -4,7 +4,7 @@ buat e-commerce iseng iseng biar pair programing ngga bengong
 
 routes
 
-/ = home
+/ = home daftar barang dan tombol login
 /customer = list data/ profil customer, edit alamat atau no telp | top up uang default 0
 /customer/buy = list product yang akan di beli (pending, bayar lunas, beli acc) = status | option buy
 /customer/create = input data customer

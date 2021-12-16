@@ -1,0 +1,29 @@
+{
+  "name": "ecomkeyboard",
+  "version": "1.0.0",
+  "description": "buat e-commerce iseng iseng biar pair programing ngga bengong",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/narindaGp/ecomKeyboard.git"
+  },
+  "keywords": [],
+  "author": "Narinda Giriputra, Mahardika Dwiputra",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/narindaGp/ecomKeyboard/issues"
+  },
+  "homepage": "https://github.com/narindaGp/ecomKeyboard#readme",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "pg": "^8.7.1",
+    "sequelize": "^6.12.0-beta.3"
+  },
+  "devDependencies": {
+    "sequelize-cli": "^6.3.0"
+  }
+}
