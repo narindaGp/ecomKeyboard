@@ -2,12 +2,11 @@ const router = require('express').Router()
 const customerRoute = require('./customer')
 const productRoute = require('./product')
 const sellerRoute = require('./seller')
+const Controller = require('../controllers/controller.js')
 
 
 
-router.get('/', (req, res) => {
-    res.send('Hello World!')
-  })
+router.get('/', Controller.getHome)
 
 //   router.get('/', (req, res) => {
 //     res.render('verification')
