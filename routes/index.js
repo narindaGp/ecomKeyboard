@@ -7,6 +7,9 @@ const Controller = require('../controllers/controller.js')
 
 
 
+router.get('/', Controller.getLanding)
+
+
 
 
   router.get('/', (req, res) => {

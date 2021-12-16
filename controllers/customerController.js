@@ -8,6 +8,7 @@ class CustomerController {
     static createAccount(req, res) {
         res.render('createCustomer')
     }
+    
     static createAccountPost(req, res) {
         const { fullName, email, password } = req.body
         let input = { fullName, email, password }

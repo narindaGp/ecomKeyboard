@@ -1,0 +1,64 @@
+<%- include('./partials/top.ejs', {title: "home"}) %>
+
+   <!-- awal menu -->
+
+   <nav class="navbar navbar-expand-lg navbar-dark bg-dark mb-5">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a class="nav-item nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+        <a class="nav-item nav-link" href="#">Product</a>
+        <a class="nav-item nav-link" href="#">Profile</a>
+        <a class="nav-item nav-link" href="/views/sandboxView/login.html">Logout</a>
+        
+      </div>
+    </div>
+  </nav>
+
+  <!-- akhir menu -->
+
+<!-- awal login -->
+
+<div class="d-md-flex half">
+  <div class="bg" style="background-image: url('https://picsum.photos/200/300');"></div>
+  <div class="contents">
+
+    <div class="container">
+      <div class="row align-items-center justify-content-center">
+        <div class="col-md-12">
+          <div class="form-block mx-auto">
+            <div class="text-center mb-5">
+              <h3 class="text-uppercase">Login to <strong>Seller</strong></h3>
+            </div>
+            <form action="/seller/login" method="post">
+              <div class="form-group first">
+                <label for="username">Username</label>
+                <input name="username" type="text" class="form-control" placeholder="your-email@gmail.com" id="username">
+              </div>
+              <div class="form-group last mb-3">
+                <label for="password">Password</label>
+                <input name="password" type="password" class="form-control" placeholder="Your Password" id="password">
+              </div>
+              
+             
+
+              <input type="submit" value="Log In" class="btn btn-block py-2 btn-primary">
+              <a href="/seller/create" class="btn btn-block py-2 btn-primary mt-3">Create account</a>
+             
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  
+</div>
+
+<!-- akhir login -->
+
+</body>
+</html>
