@@ -3,6 +3,7 @@ npx sequelize-cli model:generate --name Seller --attributes sellerName:string,em
 npx sequelize-cli model:generate --name Product --attributes productName:string,price:integer,stock:integer,SellerId:integer
 npx sequelize-cli model:generate --name Customer --attributes customerName:string,email:string,password:string,balance:integer
 npx sequelize-cli model:generate --name ProductReceipt --attributes ProductId:integer,CustomerId:integer,productKey:string
+npx sequelize-cli model:generate --name ProductDescription --attributes type:string,size:integer,requirement:string,ProductId:integer
 
 */
 
