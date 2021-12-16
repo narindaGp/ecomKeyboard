@@ -1,7 +1,7 @@
 {
   "development": {
 
-    "username": "postgres",
+    "username": "narpost",
     "password": "postgres",
     "database": "ecomKeyboard",
     "host": "localhost",
