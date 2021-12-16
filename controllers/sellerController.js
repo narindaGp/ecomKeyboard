@@ -5,20 +5,7 @@ const ProductDescription = require('../models/index')
 const bcrypt = require('bcryptjs')
 
 class SellerController {
-    static createAccount(req, res) {
-        res.render('createSeller')
-    }
-    static createAccountPost(req, res) {
-        const { fullName, email, password } = req.body
-        let input = { fullName, email, password }
-        Seller.create(input)
-            .then(data => {
-                res.redirect('/seller/login')
-            })
-            .catch(err => {
-                res.send(err)
-            })
-    }
+  
 
     static loginAccount(req, res) {
         res.render('loginSeller')
@@ -65,7 +52,7 @@ class SellerController {
         let id = req.params.id
         Seller.findByPk(id)
             .then(data => {
-                res.render('addProduct', data)
+                res.render('addProduct', {data})
             })
             .catch(err => {
                 res.send(err)
@@ -91,7 +78,20 @@ class SellerController {
             })
 
     }
-
+  // static createAccount(req, res) {
+    //     res.render('createSeller')
+    // }
+    // static createAccountPost(req, res) {
+    //     const { fullName, email, password } = req.body
+    //     let input = { fullName, email, password }
+    //     Seller.create(input)
+    //         .then(data => {
+    //             res.redirect('/seller/login')
+    //         })
+    //         .catch(err => {
+    //             res.send(err)
+    //         })
+    // }
 
 }
 
