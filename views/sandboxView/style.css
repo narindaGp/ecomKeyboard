@@ -1,0 +1,22 @@
+body, *{
+  margin: 0px;
+  padding: 0px;
+}
+
+/* awal menu */
+
+.container-menu{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+
+}
+
+
+/* akhir menu */
+
+
+.container-card{
+  /* max-height: 35vh; */
+  height: 200px;
+}
