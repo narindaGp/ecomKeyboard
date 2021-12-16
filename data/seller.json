@@ -2,41 +2,30 @@
     {
         "sellerName": "Stepha Oppy",
         "email": "soppy0@irs.gov",
-        "password": "B9ddVdG",
-        "address": "38 Browning Street",
-        "phoneNumber": "403-260-8140",
-        "money": 0
+        "password": "B9ddVdG"
+      
     },
     {
         "sellerName": "Morgen Widdowfield",
         "email": "mwiddowfield1@engadget.com",
-        "password": "c3qTDR3E9dP",
-        "address": "28899 Sommers Plaza",
-        "phoneNumber": "269-953-4294",
-        "money": 0
+        "password": "c3qTDR3E9dP"
+    
     },
     {
         "sellerName": "Orly Glabach",
         "email": "oglabach2@soundcloud.com",
-        "password": "UmYYHr61H",
-        "address": "1 Warrior Court",
-        "phoneNumber": "248-355-2461",
-        "money": 0
+        "password": "UmYYHr61H"
+     
     },
     {
         "sellerName": "Dolores Chifney",
         "email": "dchifney3@cisco.com",
-        "password": "DpzPd6Ac9",
-        "address": "23451 Summit Parkway",
-        "phoneNumber": "818-524-1444",
-        "money": 0
+        "password": "DpzPd6Ac9"
     },
     {
         "sellerName": "Fleur Karys",
         "email": "fkarys4@linkedin.com",
-        "password": "vS6FO6e9",
-        "address": "57342 Declaration Plaza",
-        "phoneNumber": "680-335-0320",
-        "money": 0
+        "password": "vS6FO6e9"
+       
     }
 ]
