@@ -1,7 +1,41 @@
-[{"customerName":"Nikkie Valentin","e-mail":"nvalentin0@squarespace.com","password":"Ox4VA4","address":"8652 Melrose Parkway","phoneNumber":"267-308-0612","money":0},
-{"customerName":"Halette Mohammad","e-mail":"hmohammad1@scribd.com","password":"Y7O3Wn","address":"354 Gulseth Terrace","phoneNumber":"460-669-0247","money":0},
-{"customerName":"Irina Bradden","e-mail":"ibradden2@hexun.com","password":"av9Ux0V1L","address":"4267 Jackson Drive","phoneNumber":"694-665-6555","money":0},
-{"customerName":"Phelia Newlin","e-mail":"pnewlin3@geocities.jp","password":"0TwAfu","address":"6825 Center Parkway","phoneNumber":"658-487-1196","money":0},
-{"customerName":"Deni Standingford","e-mail":"dstandingford4@usnews.com","password":"dRt8OmnQ","address":"53 Surrey Trail","phoneNumber":"330-892-2713","money":0},
-{"customerName":"Genovera Lattimore","e-mail":"glattimore5@wisc.edu","password":"6r3EWpQ","address":"3 Vernon Center","phoneNumber":"238-302-8734","money":0},
-{"customerName":"Sophi Rioch","e-mail":"srioch6@wix.com","password":"E31d42UpB","address":"79 Raven Center","phoneNumber":"446-858-7166","money":0}]
+[
+    {
+        "customerName": "Nikkie Valentin",
+        "e-mail": "nvalentin0@squarespace.com",
+        "password": "Ox4VA4",
+        "address": "8652 Melrose Parkway",
+        "phoneNumber": "267-308-0612",
+        "money": 0
+    },
+    {
+        "customerName": "Halette Mohammad",
+        "e-mail": "hmohammad1@scribd.com",
+        "password": "Y7O3Wn",
+        "address": "354 Gulseth Terrace",
+        "phoneNumber": "460-669-0247",
+        "money": 0
+    },
+    {
+        "customerName": "Irina Bradden",
+        "e-mail": "ibradden2@hexun.com",
+        "password": "av9Ux0V1L",
+        "address": "4267 Jackson Drive",
+        "phoneNumber": "694-665-6555",
+        "money": 0
+    },
+    {
+        "customerName": "Phelia Newlin",
+        "e-mail": "pnewlin3@geocities.jp",
+        "password": "0TwAfu",
+        "address": "6825 Center Parkway",
+        "phoneNumber": "658-487-1196",
+        "money": 0
+    },
+    {
+        "customerName": "Deni Standingford",
+        "e-mail": "dstandingford4@usnews.com",
+        "password": "dRt8OmnQ",
+        "address": "53 Surrey Trail",
+        "phoneNumber": "330-892-2713",
+        "money": 0
+    },
