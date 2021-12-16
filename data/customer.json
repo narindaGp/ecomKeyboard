@@ -1,31 +1,27 @@
 [
     {
         "customerName": "Nikkie Valentin",
-        "e-mail": "nvalentin0@squarespace.com",
-        "password": "Ox4VA4",
-        "balance": 0
+        "email": "nvalentin0@squarespace.com",
+        "password": "Ox4VA4"
     },
     {
         "customerName": "Halette Mohammad",
-        "e-mail": "hmohammad1@scribd.com",
-        "password": "Y7O3Wn",
-        "balance": 0
+        "email": "hmohammad1@scribd.com",
+        "password": "Y7O3Wn"
     },
     {
         "customerName": "Irina Bradden",
-        "e-mail": "ibradden2@hexun.com",
-        "password": "av9Ux0V1L",
-        "balance": 0
+        "email": "ibradden2@hexun.com",
+        "password": "av9Ux0V1L"
     },
     {
         "customerName": "Phelia Newlin",
-        "e-mail": "pnewlin3@geocities.jp",
-        "password": "0TwAfu",
-        "balance": 0
+        "email": "pnewlin3@geocities.jp",
+        "password": "0TwAfu"
     },
     {
         "customerName": "Deni Standingford",
-        "e-mail": "dstandingford4@usnews.com",
-        "password": "dRt8OmnQ",
-        "balance": 0
-    },
+        "email": "dstandingford4@usnews.com",
+        "password": "dRt8OmnQ"
+    }
+]

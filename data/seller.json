@@ -2,31 +2,30 @@
     {
         "sellerName": "Stepha Oppy",
         "email": "soppy0@irs.gov",
-        "password": "B9ddVdG",
-        "balance": 0
+        "password": "B9ddVdG"
+      
     },
     {
         "sellerName": "Morgen Widdowfield",
         "email": "mwiddowfield1@engadget.com",
-        "password": "c3qTDR3E9dP",
-        "balance": 0
+        "password": "c3qTDR3E9dP"
+    
     },
     {
         "sellerName": "Orly Glabach",
         "email": "oglabach2@soundcloud.com",
-        "password": "UmYYHr61H",
-        "balance": 0
+        "password": "UmYYHr61H"
+     
     },
     {
         "sellerName": "Dolores Chifney",
         "email": "dchifney3@cisco.com",
-        "password": "DpzPd6Ac9",
-        "balance": 0
+        "password": "DpzPd6Ac9"
     },
     {
         "sellerName": "Fleur Karys",
         "email": "fkarys4@linkedin.com",
-        "password": "vS6FO6e9",
-        "balance": 0
+        "password": "vS6FO6e9"
+       
     }
 ]
