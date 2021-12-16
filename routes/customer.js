@@ -5,7 +5,7 @@ const CustomerController = require('../controllers/customerController')
 // router.get('/login', CustomerController.loginAccount)
 // router.get('/:id/profile', CustomerController.profile)
 // router.get('/:id/buy', CustomerController.buyProduct)
-// router.get('/:id/checkout', CustomerController.checkoutCart)
+// router.post('/:id/buy', CustomerController.checkoutCart)
 
 
 module.exports = router
