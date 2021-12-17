@@ -82,6 +82,7 @@ class CustomerController {
         let id = req.params.id
         Customer.findByPk(id, { include: Product})
             .then(data => {
+                console.log(data)
                 res.render('customerCart', { data })
             })
             .catch(err => {
@@ -92,7 +93,7 @@ class CustomerController {
         let id = req.params.id
         Customer.findByPk(id)
             .then(data => {
-                res.render('topUpBalance', { data })
+                res.render('topup', { data })
             })
             .catch(err => {
                 res.send(err)
@@ -100,12 +101,15 @@ class CustomerController {
 
     }
     static topUpBalancePost(req, res) {
-        const topUp = req.body
+       
+        const {balance} = req.body
+         console.log(balance)
         let id = req.params.id
         Customer.findByPk(id)
             .then(data => {
-                Customer.balance += topUp
-                res.redirect('/customer/:id/cart')
+                data.balance += balance
+                console.log(data)
+                res.redirect(`/customer/${data.id}/cart`)
             })
             .catch(err => {
                 res.send(err)

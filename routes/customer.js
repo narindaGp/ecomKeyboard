@@ -9,7 +9,7 @@ router.get('/login', CustomerController.loginAccount)
 router.post('/login', CustomerController.loginAccountPost)
 
 router.get('/:id/topUp', CustomerController.topUpBalance)
-router.get('/:id/topUp', CustomerController.topUpBalancePost)
+router.post('/:id/topUp', CustomerController.topUpBalancePost)
 
 router.get('/:id/cart', CustomerController.cart)
 router.get('/:id/buy', CustomerController.addToCart)

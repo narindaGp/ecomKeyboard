@@ -1,37 +1,24 @@
-<%- include('./partials/top.ejs', {title: "Create Customer Account"}) %>
-  
-   <%- include('./partials/menu.ejs') %>
-  
+<%- include('./partials/top.ejs', {title: "Create Customer Account" }) %>
 
-  <form action="">
-    <!-- Name input -->
-    <div class="form-outline mb-4">
-      <input type="text" id="form5Example1" class="form-control" />
-      <label class="form-label" for="form5Example1">Saldo</label>
-    </div>
-  
-    <!-- Email input -->
-    <div class="form-outline mb-4">
-      <input type="email" id="form5Example2" class="form-control" />
-      <label class="form-label" for="form5Example2">Metode Topup</label>
-    </div>
-  
-    <!-- Checkbox -->
-    <div class="form-check d-flex justify-content-center mb-4">
-      <input
-        class="form-check-input me-2"
-        type="checkbox"
-        value=""
-        id="form5Example3"
-        checked
-      />
-      <label class="form-check-label" for="form5Example3">
-        I have read and agree to the terms
-      </label>
-    </div>
-  
-    <!-- Submit button -->
-    <button type="submit" class="btn btn-primary btn-block mb-4">Subscribe</button>
-  </form>
-</body>
-</html>
+  <%- include('./partials/menu.ejs') %>
+
+
+    <form action="/customer/<%=data.id%>/topUp" class="container" method="post">
+      <!-- Name input -->
+      <div class="form-outline mb-4">
+        <label class="form-label" for="form5Example1">Balance</label>
+
+        <input type="number" id="form5Example1" class="form-control" name="balance"/>
+      </div>
+
+      <!-- Email input -->
+
+      <!-- Checkbox -->
+
+
+      <!-- Submit button -->
+      <button type="submit" class="btn btn-primary btn-block mb-4">Submit</button>
+    </form>
+    </body>
+
+    </html>
