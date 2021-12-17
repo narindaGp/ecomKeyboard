@@ -2,7 +2,7 @@
   "development": {
 
 
-    "username": "narpost",
+    "username": "postgres",
     "password": "postgres",
     "database": "ecomSoftware",
     "host": "localhost",

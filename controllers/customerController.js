@@ -23,7 +23,7 @@ class CustomerController {
 
     static createAccountPost(req, res) {
         console.log('a')
-        console.log(req.body)
+        // console.log(req.body)
         let balance = 0
         const { customerName, email, password } = req.body
         let input = { customerName, email, password, balance}
@@ -42,35 +42,45 @@ class CustomerController {
 
     static loginAccountPost(req, res) {
         const { email, password } = req.body
+        console.log(req.body)
+
 
         Customer.findOne({ where: { email } })
             .then(data => {
                 if (data) {
-                    console.log(data)
+                    // console.log(data)
                     const isValidPassword = bcrypt.compareSync(password, data.password)
                     if (isValidPassword) {
                         console.log(data)
-                        res.redirect('/customer/cart')
+                        console.log('masuk')
+                        res.redirect(`/customer/${data.id}/cart`)
+                        // res.render(`customerCart`)
+
                     }
                     else {
+                     
+
                         const errormsg = "invalid password"
                         res.redirect(`/customer/login?error=${errormsg}`)
                     }
                 }
                 else {
+                    console.log('tidak luar')
+
                     const errormsg = "invalid username"
                     res.redirect(`/customer/login?error=${errormsg}`)
 
                 }
             })
             .catch(err => {
+                console.log('er')
                 res.send(err)
             })
     }
 
     static cart(req, res) {
         let id = req.params.id
-        Customer.findByPk(id, { include: Product, order: [Product.price] })
+        Customer.findByPk(id, { include: Product})
             .then(data => {
                 res.render('customerCart', { data })
             })
@@ -122,7 +132,7 @@ class CustomerController {
         Customer.findByPk(id, { include: Product })
             .then(data => {
                 let key = data.Product.ProductReceipt.productKey.map(el => {
-                    return el
+                    return el 
                 })
                 const transporter = nodemailer.createTransport({
                     service: 'gmail',
@@ -139,6 +149,7 @@ class CustomerController {
                 }
 
                 if (saldo >= totalCost) {
+                    data.saldo -= totalCost
                     transporter.sendMail(mailOptions, (error, info) => {
 
                         if (error) {
