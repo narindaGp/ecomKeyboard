@@ -2,8 +2,8 @@ const router = require('express').Router()
 const SellerController = require('../controllers/sellerController')
 
 
-// router.get('/create', SellerController.createAccount)
-// router.post('/create', SellerController.createAccountPost)
+router.get('/create', SellerController.createAccount)
+router.post('/create', SellerController.createAccountPost)
 router.get('/login', SellerController.loginAccount)
 router.post('/login', SellerController.loginAccountPost)
 
