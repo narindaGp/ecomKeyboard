@@ -6,7 +6,6 @@ const bcrypt = require('bcryptjs')
 
 class SellerController {
   
-
     static loginAccount(req, res) {
         res.render('loginSeller')
     }
@@ -39,8 +38,7 @@ class SellerController {
 
 
     static profile(req, res) {
-        let id = req.params.id
-        Seller.findByPk(id, { include: Product })
+        Seller.findAll( { include: Product })
             .then(data => {
                 res.render('sellerProfile', { data })
             })
@@ -49,8 +47,7 @@ class SellerController {
             })
     }
     static addProduct(req, res) {
-        let id = req.params.id
-        Seller.findByPk(id)
+        Seller.findAll()
             .then(data => {
                 res.render('addProduct', {data})
             })
