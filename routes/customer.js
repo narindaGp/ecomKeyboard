@@ -3,6 +3,7 @@ const CustomerController = require('../controllers/customerController')
 
 router.get('/create', CustomerController.createAccount)
 router.post('/create', CustomerController.createAccountPost)
+router.get('/test', CustomerController.findAll)
 
 router.get('/login', CustomerController.loginAccount)
 router.post('/login', CustomerController.createAccountPost)
