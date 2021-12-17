@@ -75,20 +75,20 @@ class SellerController {
             })
 
     }
-  // static createAccount(req, res) {
-    //     res.render('createSeller')
-    // }
-    // static createAccountPost(req, res) {
-    //     const { fullName, email, password } = req.body
-    //     let input = { fullName, email, password }
-    //     Seller.create(input)
-    //         .then(data => {
-    //             res.redirect('/seller/login')
-    //         })
-    //         .catch(err => {
-    //             res.send(err)
-    //         })
-    // }
+  static createAccount(req, res) {
+        res.render('createSeller')
+    }
+    static createAccountPost(req, res) {
+        const { fullName, email, password } = req.body
+        let input = { fullName, email, password }
+        Seller.create(input)
+            .then(data => {
+                res.redirect('/seller/login')
+            })
+            .catch(err => {
+                res.send(err)
+            })
+    }
 
 }
 

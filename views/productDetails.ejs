@@ -15,65 +15,35 @@
       <div class="col-lg-6">
 
         <!--Carousel Wrapper-->
+        <% data.forEach(el =>{ %>
         <div id="carousel-thumb1" class="carousel slide carousel-fade carousel-thumbnails mb-5 pb-4" data-ride="carousel">
 
         <h3 class="h3-responsive text-center text-md-left mb-5 ml-xl-0 ml-4">
           <span class="red-text font-weight-bold">
             <strong>$1449</strong>
           </span>
-          <span class="grey-text">
-            <small>
-              <s>$1789</s>
-            </small>
-          </span>
+         
         </h3>
 
         <div class="font-weight-normal">
           
-          <p class="ml-xl-0 ml-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente nesciunt atque nemo neque ut officiis nostrum incidunt maiores, magni optio et sunt suscipit iusto nisi totam quis, nobis mollitia necessitatibus.</p>
-
-          <p class="ml-xl-0 ml-4">
-            <strong>Storage: </strong>64GB</p>
-          <p class="ml-xl-0 ml-4">
-            <strong>Size: </strong>9.6-inch</p>
-          <p class="ml-xl-0 ml-4">
-            <strong>Resolution: </strong>2048 x 1536</p>
-          <p class="ml-xl-0 ml-4">
-            <strong>Availability: </strong>In stock</p>
           
-          <div class="mt-5">
-            <p class="grey-text">Choose your color</p>
-            <div class="row text-center text-md-left">
-              <div class="col-md-4 col-12 ">
-                <div class="form-group">
-                  <input class="form-check-input" name="group100" type="radio" id="radio100" checked="checked">
-                  <label for="radio100" class="form-check-label dark-grey-text">White</label>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="form-group">
-                  <input class="form-check-input" name="group100" type="radio" id="radio101">
-                  <label for="radio101" class="form-check-label dark-grey-text">Silver</label>
-                </div>
-              </div>
-              <div class="col-md-4">
-                <div class="form-group">
-                  <input class="form-check-input" name="group100" type="radio" id="radio102">
-                  <label for="radio102" class="form-check-label dark-grey-text">Gold</label>
-                </div>
-              </div>
-            </div>
-            <div class="row mt-3 mb-4">
-              <div class="col-md-12 text-center text-md-left text-md-right">
-                <button class="btn btn-primary btn-rounded">
-                  <i class="fas fa-cart-plus mr-2" aria-hidden="true"></i> Add to cart</button>
-              </div>
-            </div>
-          </div>
+          <p class="ml-xl-0 ml-4">
+            <strong>Type: </strong> <%= el.type %> </p>
+          <p class="ml-xl-0 ml-4">
+            <strong>Size: </strong> <%= el.size %></p>
+          <p class="ml-xl-0 ml-4">
+            <strong>Requirement: </strong><%= el.req %></p>
+          <p class="ml-xl-0 ml-4">
+            <!-- <strong>Availability: </strong><%=  %></p> -->
+          
+         
 
         </div>
 
       </div>
+      <% }) %>
+
     </div>
 
   </section>
